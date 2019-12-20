@@ -1,0 +1,1225 @@
+﻿<svg id="twodc-layout_svg" width="100%" height="100%" viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" tabindex="0" class="layout_svg">
+  <defs id="twodc-layout-defs">
+    <pattern id="twodc-layout_Lines-1" patternUnits="userSpaceOnUse" width="1.25" height="1.25">
+      <circle cx="0" cy="0" r="0.12093701197293077" fill="#808080" style="display: none;"></circle>
+    </pattern>
+    <pattern id="twodc-layout_user-grid" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect x="0" y="0" width="20" height="20" fill="#ffffff"></rect>
+      <path d=" M 10 10 m 0 0 l 0.8 0 m -0.4 -0.4 l 0 0.8" stroke-width="0.1" stroke="#808080" transform="translate(-0.4,0)" fill="#808080"></path>
+      <rect x="0" y="0" width="20" height="20" fill="url(#twodc-layout_Lines-1)"></rect>
+    </pattern>
+  </defs>
+  <g id="dot-grid">
+    <rect x="0" y="0" width="420" height="297" style="fill: url(#twodc-layout_user-grid) #ffffff;"></rect>
+  </g>
+  <g id="Layout_Container">
+    <g id="LayoutDataGroup">
+      <g id="MS_Group"></g>
+      <rect x="205.00045776367188" y="100.36627197265625" width="0" height="0" fill="blue" fill-opacity="0.15" vector-effect="non-scaling-stroke" stroke-width="2"></rect>
+      <g id="BorderLayer">
+        <g id="21769047770">
+          <g id="data_21769047770">
+            <g id="nodedata_21769047770">
+              <path d=" M 0 0 m 0 297 l 420 0" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769051060">
+          <g id="data_21769051060">
+            <g id="nodedata_21769051060">
+              <path d=" M 0 0 m 0 0 l 420 0" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769056310">
+          <g id="data_21769056310">
+            <g id="nodedata_21769056310">
+              <path d=" M 0 0 m 420 297 l 0 -297" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769069400">
+          <g id="data_21769069400">
+            <g id="nodedata_21769069400">
+              <path d=" M 0 0 m 15 5 l 400 0" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769072650">
+          <g id="data_21769072650">
+            <g id="nodedata_21769072650">
+              <path d=" M 0 0 m 0 0 l 0 297" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769082610">
+          <g id="data_21769082610">
+            <g id="nodedata_21769082610">
+              <path d=" M 0 0 m 15 5 l 0 287" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769123130">
+          <g id="data_21769123130">
+            <g id="nodedata_21769123130">
+              <path d=" M 0 0 m 415 292 l 0 -287" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769234500">
+          <g id="data_21769234500">
+            <g id="nodedata_21769234500">
+              <path d=" M 0 0 m 415 292 l -400 0" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21768995430">
+          <g id="data_21768995430">
+            <g id="nodedata_21768995430">
+              <path d=" M 0 0 m 20 10 l 0 277" stroke="#000000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769070980">
+          <g id="data_21769070980">
+            <g id="nodedata_21769070980">
+              <path d=" M 0 0 m 20 10 l 390 0" stroke="#000000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769131730">
+          <g id="data_21769131730">
+            <g id="nodedata_21769131730">
+              <path d=" M 0 0 m 20 287 l 390 0" stroke="#000000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769134260">
+          <g id="data_21769134260">
+            <g id="nodedata_21769134260">
+              <path d=" M 0 0 m 410 287 l 0 -277" stroke="#000000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769085310">
+          <g id="data_21769085310">
+            <g id="nodedata_21769085310">
+              <path d=" M 0 0 m 0 0 l 0 10" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769085390">
+          <g id="data_21769085390">
+            <g id="nodedata_21769085390">
+              <path d=" M 0 0 m 0 10 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769085450">
+          <g id="data_21769085450">
+            <g id="nodedata_21769085450">
+              <path d=" M 0 0 m 5 10 l 0 -5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769085520">
+          <g id="data_21769085520">
+            <g id="nodedata_21769085520">
+              <path d=" M 0 0 m 5 5 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769085570">
+          <g id="data_21769085570">
+            <g id="nodedata_21769085570">
+              <path d=" M 0 0 m 10 5 l 0 -5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769085630">
+          <g id="data_21769085630">
+            <g id="nodedata_21769085630">
+              <path d=" M 0 0 m 10 0 l -10 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141090">
+          <g id="data_21769141090">
+            <g id="nodedata_21769141090">
+              <path d=" M 0 0 m 410 0 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141160">
+          <g id="data_21769141160">
+            <g id="nodedata_21769141160">
+              <path d=" M 0 0 m 410 5 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141220">
+          <g id="data_21769141220">
+            <g id="nodedata_21769141220">
+              <path d=" M 0 0 m 415 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141280">
+          <g id="data_21769141280">
+            <g id="nodedata_21769141280">
+              <path d=" M 0 0 m 415 10 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141350">
+          <g id="data_21769141350">
+            <g id="nodedata_21769141350">
+              <path d=" M 0 0 m 420 10 l 0 -10" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141420">
+          <g id="data_21769141420">
+            <g id="nodedata_21769141420">
+              <path d=" M 0 0 m 420 0 l -10 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141640">
+          <g id="data_21769141640">
+            <g id="nodedata_21769141640">
+              <path d=" M 0 0 m 0 287 l 0 10" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141810">
+          <g id="data_21769141810">
+            <g id="nodedata_21769141810">
+              <path d=" M 0 0 m 0 297 l 10 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141870">
+          <g id="data_21769141870">
+            <g id="nodedata_21769141870">
+              <path d=" M 0 0 m 10 297 l 0 -5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141920">
+          <g id="data_21769141920">
+            <g id="nodedata_21769141920">
+              <path d=" M 0 0 m 10 292 l -5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769141990">
+          <g id="data_21769141990">
+            <g id="nodedata_21769141990">
+              <path d=" M 0 0 m 5 292 l 0 -5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142050">
+          <g id="data_21769142050">
+            <g id="nodedata_21769142050">
+              <path d=" M 0 0 m 5 287 l -5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142280">
+          <g id="data_21769142280">
+            <g id="nodedata_21769142280">
+              <path d=" M 0 0 m 420 287 l 0 10" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142360">
+          <g id="data_21769142360">
+            <g id="nodedata_21769142360">
+              <path d=" M 0 0 m 420 297 l -10 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142430">
+          <g id="data_21769142430">
+            <g id="nodedata_21769142430">
+              <path d=" M 0 0 m 410 297 l 0 -5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142510">
+          <g id="data_21769142510">
+            <g id="nodedata_21769142510">
+              <path d=" M 0 0 m 410 292 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142570">
+          <g id="data_21769142570">
+            <g id="nodedata_21769142570">
+              <path d=" M 0 0 m 415 292 l 0 -5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21769142620">
+          <g id="data_21769142620">
+            <g id="nodedata_21769142620">
+              <path d=" M 0 0 m 415 287 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21878723120" transform="matrix(1,0,0,1,291.92,271.15)">
+          <g id="data_21878723120">
+            <g id="nodedata_21878723120" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Date</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878791420" transform="matrix(1,0,0,1,291.92,275.15)">
+          <g id="data_21878791420">
+            <g id="nodedata_21878791420" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Name</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878791590" transform="matrix(1,0,0,1,291.85,279.29)">
+          <g id="data_21878791590">
+            <g id="nodedata_21878791590" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Checked</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878791770" transform="matrix(1,0,0,1,291.82,283.36)">
+          <g id="data_21878791770">
+            <g id="nodedata_21878791770" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Standard</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878835940" transform="matrix(1,0,0,1,329.92,283.15)">
+          <g id="data_21878835940">
+            <g id="nodedata_21878835940" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Replaced by:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878887720" transform="matrix(1,0,0,1,329.92,279.15)">
+          <g id="data_21878887720">
+            <g id="nodedata_21878887720" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Replacement for:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878891460" transform="matrix(1,0,0,1,329.92,275.15)">
+          <g id="data_21878891460">
+            <g id="nodedata_21878891460" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Origin:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878906440" transform="matrix(1,0,0,1,329.92,267.15)">
+          <g id="data_21878906440">
+            <g id="nodedata_21878906440" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Draw. no. customer:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878909090" transform="matrix(1,0,0,1,329.92,263.15)">
+          <g id="data_21878909090">
+            <g id="nodedata_21878909090" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Draw. no. engineer:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878924800" transform="matrix(1,0,0,1,374.92,271.15)">
+          <g id="data_21878924800">
+            <g id="nodedata_21878924800" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Unit: =P1.H3</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878926980" transform="matrix(1,0,0,1,374.83,275.33)">
+          <g id="data_21878926980">
+            <g id="nodedata_21878926980" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Location: +0.L001.G001.R001</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878932000" transform="matrix(1,0,0,1,404.32,279.15)">
+          <g id="data_21878932000">
+            <g id="nodedata_21878932000" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">007</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878934110" transform="matrix(1,0,0,1,390.92,283.15)">
+          <g id="data_21878934110">
+            <g id="nodedata_21878934110" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">From:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878986370" transform="matrix(1,0,0,1,230.92,255.15)">
+          <g id="data_21878986370">
+            <g id="nodedata_21878986370" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Project-No.: iDB_P01</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878986380" transform="matrix(1,0,0,1,230.92,259.15)">
+          <g id="data_21878986380">
+            <g id="nodedata_21878986380" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Project: Demo project IE IO</text>
+            </g>
+          </g>
+        </g>
+        <g id="21879035990" transform="matrix(1,0,0,1,329.92,255.15)">
+          <g id="data_21879035990">
+            <g id="nodedata_21879035990" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Customer:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21879040230" transform="matrix(1,0,0,1,329.92,259.15)">
+          <g id="data_21879040230">
+            <g id="nodedata_21879040230" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Order number:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21881231330" transform="matrix(1,0,0,1,262.92,283.15)">
+          <g id="data_21881231330">
+            <g id="nodedata_21881231330" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Date</text>
+            </g>
+          </g>
+        </g>
+        <g id="21881234970" transform="matrix(1,0,0,1,278.92,283.15)">
+          <g id="data_21881234970">
+            <g id="nodedata_21881234970" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Name</text>
+            </g>
+          </g>
+        </g>
+        <g id="21881238920" transform="matrix(1,0,0,1,238.92,283.15)">
+          <g id="data_21881238920">
+            <g id="nodedata_21881238920" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Change</text>
+            </g>
+          </g>
+        </g>
+        <g id="21881241010" transform="matrix(1,0,0,1,230.92,283.15)">
+          <g id="data_21881241010">
+            <g id="nodedata_21881241010" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Ind.</text>
+            </g>
+          </g>
+        </g>
+        <g id="21889258680" transform="matrix(1,0,0,1,390.92,279.15)">
+          <g id="data_21889258680">
+            <g id="nodedata_21889258680" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Sheet:</text>
+            </g>
+          </g>
+        </g>
+        <g id="21889266590" transform="matrix(1,0,0,1,407.49,283.15)">
+          <g id="data_21889266590">
+            <g id="nodedata_21889266590" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">7</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878707820" transform="matrix(1,0,0,1,303.92,271.15)">
+          <g id="data_21878707820">
+            <g id="nodedata_21878707820" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">2019/12/20</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878791430" transform="matrix(1,0,0,1,303.92,275.15)">
+          <g id="data_21878791430">
+            <g id="nodedata_21878791430" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">@SETUP</text>
+            </g>
+          </g>
+        </g>
+        <g id="21878791600" transform="matrix(1,0,0,1,303.92,279.15)">
+          <g id="data_21878791600">
+            <g id="nodedata_21878791600" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21878791780" transform="matrix(1,0,0,1,303.92,283.15)">
+          <g id="data_21878791780">
+            <g id="nodedata_21878791780" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21879114270" transform="matrix(1,0,0,1,230.92,263.15)">
+          <g id="data_21879114270">
+            <g id="nodedata_21879114270" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">P&amp;ID diagram in relation to EN 10628, DIN A3</text>
+            </g>
+          </g>
+        </g>
+        <g id="21879116890" transform="matrix(1,0,0,1,230.92,267.15)">
+          <g id="data_21879116890">
+            <g id="nodedata_21879116890" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880839850" transform="matrix(1,0,0,1,230.92,271.15)">
+          <g id="data_21880839850">
+            <g id="nodedata_21880839850" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880862260" transform="matrix(1,0,0,1,230.92,275.15)">
+          <g id="data_21880862260">
+            <g id="nodedata_21880862260" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880863610" transform="matrix(1,0,0,1,230.92,279.15)">
+          <g id="data_21880863610">
+            <g id="nodedata_21880863610" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880865240" transform="matrix(1,0,0,1,238.92,271.15)">
+          <g id="data_21880865240">
+            <g id="nodedata_21880865240" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880867190" transform="matrix(1,0,0,1,238.92,275.15)">
+          <g id="data_21880867190">
+            <g id="nodedata_21880867190" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880868450" transform="matrix(1,0,0,1,238.92,279.15)">
+          <g id="data_21880868450">
+            <g id="nodedata_21880868450" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880869970" transform="matrix(1,0,0,1,262.92,271.15)">
+          <g id="data_21880869970">
+            <g id="nodedata_21880869970" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880873330" transform="matrix(1,0,0,1,262.92,275.15)">
+          <g id="data_21880873330">
+            <g id="nodedata_21880873330" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880874420" transform="matrix(1,0,0,1,262.92,279.15)">
+          <g id="data_21880874420">
+            <g id="nodedata_21880874420" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880876460" transform="matrix(1,0,0,1,278.92,271.15)">
+          <g id="data_21880876460">
+            <g id="nodedata_21880876460" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880879090" transform="matrix(1,0,0,1,278.92,275.15)">
+          <g id="data_21880879090">
+            <g id="nodedata_21880879090" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21880883030" transform="matrix(1,0,0,1,278.92,279.15)">
+          <g id="data_21880883030">
+            <g id="nodedata_21880883030" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0"></text>
+            </g>
+          </g>
+        </g>
+        <g id="21818514050">
+          <g id="data_21818514050">
+            <g id="nodedata_21818514050">
+              <path d=" M 0 0 m 230 255 l 0 32" stroke="#000000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21818514750">
+          <g id="data_21818514750">
+            <g id="nodedata_21818514750">
+              <path d=" M 0 0 m 230 287 l 180 0" stroke="#010000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21818515190">
+          <g id="data_21818515190">
+            <g id="nodedata_21818515190">
+              <path d=" M 0 0 m 410 255 l -180 0" stroke="#000000" fill="transparent" stroke-width="0.7" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21828631670">
+          <g id="data_21828631670">
+            <g id="nodedata_21828631670">
+              <path d=" M 0 0 m 291 287 l 0 -32" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21828637490">
+          <g id="data_21828637490">
+            <g id="nodedata_21828637490">
+              <path d=" M 0 0 m 329 287 l 0 -32" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21828671460">
+          <g id="data_21828671460">
+            <g id="nodedata_21828671460">
+              <path d=" M 0 0 m 410 283 l -20 0" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21828675290">
+          <g id="data_21828675290">
+            <g id="nodedata_21828675290">
+              <path d=" M 0 0 m 390 283 l -160 0" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21828677210">
+          <g id="data_21828677210">
+            <g id="nodedata_21828677210">
+              <path d=" M 0 0 m 410 279 l -180 0" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21828678590">
+          <g id="data_21828678590">
+            <g id="nodedata_21828678590">
+              <path d=" M 0 0 m 410 275 l -180 0" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21878734410">
+          <g id="data_21878734410">
+            <g id="nodedata_21878734410">
+              <path d=" M 0 0 m 303 271 l 0 16" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21879263220">
+          <g id="data_21879263220">
+            <g id="nodedata_21879263220">
+              <path d=" M 0 0 m 238 271 l 0 16" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21879269490">
+          <g id="data_21879269490">
+            <g id="nodedata_21879269490">
+              <path d=" M 0 0 m 262 271 l 0 16" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="21879270650">
+          <g id="data_21879270650">
+            <g id="nodedata_21879270650">
+              <path d=" M 0 0 m 278 271 l 0 16" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="22978703450">
+          <g id="data_22978703450">
+            <g id="nodedata_22978703450">
+              <path d=" M 0 0 m 390 287 l 0 -8" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="22978705050">
+          <g id="data_22978705050">
+            <g id="nodedata_22978705050">
+              <path d=" M 0 0 m 402 287 l 0 -8" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="22978943100">
+          <g id="data_22978943100">
+            <g id="nodedata_22978943100">
+              <path d=" M 0 0 m 230 271 l 180 0" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="22978993920">
+          <g id="data_22978993920">
+            <g id="nodedata_22978993920">
+              <path d=" M 0 0 m 329 263 l 81 0" stroke="#000000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="22978998780">
+          <g id="data_22978998780">
+            <g id="nodedata_22978998780">
+              <path d=" M 0 0 m 374 279 l 0 -8" stroke="#010000" fill="transparent" stroke-width="0.35" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="23089681210" transform="matrix(0,-1,1,0,6.32,229.86)">
+          <g id="data_23089681210">
+            <g id="nodedata_23089681210" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">Passing on and reproduction of this document and use and disclosure of its contents are prohibited unless expressly permitted.</text>
+            </g>
+          </g>
+        </g>
+        <g id="23089681211" transform="matrix(0,-1,1,0,10.39,218.88)">
+          <g id="data_23089681211">
+            <g id="nodedata_23089681211" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="2.82222" background="#FFFFFF" unselectable="on" font-size="2.82222" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">The owner reserves all rights in the event of the grant of a patent or the registration of a utility model or design.</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213547250" transform="matrix(1,0,0,1,39.08,5.39)">
+          <g id="data_24213547250">
+            <g id="nodedata_24213547250" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">1</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213553950">
+          <g id="data_24213553950">
+            <g id="nodedata_24213553950">
+              <path d=" M 0 0 m 15 10 l 60 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213554490">
+          <g id="data_24213554490">
+            <g id="nodedata_24213554490">
+              <path d=" M 0 0 m 75 5 l -60 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213554690">
+          <g id="data_24213554690">
+            <g id="nodedata_24213554690">
+              <path d=" M 0 0 m 15 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213556360" transform="matrix(1,0,0,1,91.58,5.39)">
+          <g id="data_24213556360">
+            <g id="nodedata_24213556360" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">2</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213557330" transform="matrix(1,0,0,1,144.08,5.39)">
+          <g id="data_24213557330">
+            <g id="nodedata_24213557330" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">3</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213557760" transform="matrix(1,0,0,1,194.08,5.39)">
+          <g id="data_24213557760">
+            <g id="nodedata_24213557760" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">4</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213558550" transform="matrix(1,0,0,1,244.08,5.39)">
+          <g id="data_24213558550">
+            <g id="nodedata_24213558550" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">5</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213559240" transform="matrix(1,0,0,1,344.08,5.39)">
+          <g id="data_24213559240">
+            <g id="nodedata_24213559240" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">7</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213609090" transform="matrix(1,0,0,1,294.08,5.39)">
+          <g id="data_24213609090">
+            <g id="nodedata_24213609090" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">6</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213618500" transform="matrix(1,0,0,1,391.58,5.39)">
+          <g id="data_24213618500">
+            <g id="nodedata_24213618500" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">8</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213622740">
+          <g id="data_24213622740">
+            <g id="nodedata_24213622740">
+              <path d=" M 0 0 m 65 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213623400">
+          <g id="data_24213623400">
+            <g id="nodedata_24213623400">
+              <path d=" M 0 0 m 120 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213624200">
+          <g id="data_24213624200">
+            <g id="nodedata_24213624200">
+              <path d=" M 0 0 m 170 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213624690">
+          <g id="data_24213624690">
+            <g id="nodedata_24213624690">
+              <path d=" M 0 0 m 220 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213628080">
+          <g id="data_24213628080">
+            <g id="nodedata_24213628080">
+              <path d=" M 0 0 m 220 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213628400">
+          <g id="data_24213628400">
+            <g id="nodedata_24213628400">
+              <path d=" M 0 0 m 270 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213629420">
+          <g id="data_24213629420">
+            <g id="nodedata_24213629420">
+              <path d=" M 0 0 m 320 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213629660">
+          <g id="data_24213629660">
+            <g id="nodedata_24213629660">
+              <path d=" M 0 0 m 370 5 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213629950">
+          <g id="data_24213629950">
+            <g id="nodedata_24213629950">
+              <path d=" M 0 0 m 405 10 l 10 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213645060" transform="matrix(1,0,0,1,39.08,287.39)">
+          <g id="data_24213645060">
+            <g id="nodedata_24213645060" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">1</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645070" transform="matrix(1,0,0,1,91.58,287.39)">
+          <g id="data_24213645070">
+            <g id="nodedata_24213645070" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">2</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645080" transform="matrix(1,0,0,1,144.08,287.39)">
+          <g id="data_24213645080">
+            <g id="nodedata_24213645080" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">3</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645090" transform="matrix(1,0,0,1,194.08,287.39)">
+          <g id="data_24213645090">
+            <g id="nodedata_24213645090" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">4</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645100" transform="matrix(1,0,0,1,244.08,287.39)">
+          <g id="data_24213645100">
+            <g id="nodedata_24213645100" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">5</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645110" transform="matrix(1,0,0,1,344.08,287.39)">
+          <g id="data_24213645110">
+            <g id="nodedata_24213645110" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">7</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645120" transform="matrix(1,0,0,1,294.08,287.39)">
+          <g id="data_24213645120">
+            <g id="nodedata_24213645120" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">6</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213645130" transform="matrix(1,0,0,1,391.58,287.39)">
+          <g id="data_24213645130">
+            <g id="nodedata_24213645130" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">8</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213647950">
+          <g id="data_24213647950">
+            <g id="nodedata_24213647950">
+              <path d=" M 0 0 m 65 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213648680">
+          <g id="data_24213648680">
+            <g id="nodedata_24213648680">
+              <path d=" M 0 0 m 15 287 l 24 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213649200">
+          <g id="data_24213649200">
+            <g id="nodedata_24213649200">
+              <path d=" M 0 0 m 120 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213649760">
+          <g id="data_24213649760">
+            <g id="nodedata_24213649760">
+              <path d=" M 0 0 m 170 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213653060">
+          <g id="data_24213653060">
+            <g id="nodedata_24213653060">
+              <path d=" M 0 0 m 220 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213654880">
+          <g id="data_24213654880">
+            <g id="nodedata_24213654880">
+              <path d=" M 0 0 m 270 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213655250">
+          <g id="data_24213655250">
+            <g id="nodedata_24213655250">
+              <path d=" M 0 0 m 320 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213657690">
+          <g id="data_24213657690">
+            <g id="nodedata_24213657690">
+              <path d=" M 0 0 m 370 287 l 0 5" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213658020">
+          <g id="data_24213658020">
+            <g id="nodedata_24213658020">
+              <path d=" M 0 0 m 402 287 l 13 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213660720" transform="matrix(1,0,0,1,16.31,27.89)">
+          <g id="data_24213660720">
+            <g id="nodedata_24213660720" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">A</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213671990">
+          <g id="data_24213671990">
+            <g id="nodedata_24213671990">
+              <path d=" M 0 0 m 15 55 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213674220" transform="matrix(1,0,0,1,16.31,77.89)">
+          <g id="data_24213674220">
+            <g id="nodedata_24213674220" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">B</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213674230">
+          <g id="data_24213674230">
+            <g id="nodedata_24213674230">
+              <path d=" M 0 0 m 15 105 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213675080" transform="matrix(1,0,0,1,16.31,127.89)">
+          <g id="data_24213675080">
+            <g id="nodedata_24213675080" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">C</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213675090">
+          <g id="data_24213675090">
+            <g id="nodedata_24213675090">
+              <path d=" M 0 0 m 15 155 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213675450" transform="matrix(1,0,0,1,16.31,177.89)">
+          <g id="data_24213675450">
+            <g id="nodedata_24213675450" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">D</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213675460">
+          <g id="data_24213675460">
+            <g id="nodedata_24213675460">
+              <path d=" M 0 0 m 15 205 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213676160" transform="matrix(1,0,0,1,16.31,225.39)">
+          <g id="data_24213676160">
+            <g id="nodedata_24213676160" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">E</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213676170">
+          <g id="data_24213676170">
+            <g id="nodedata_24213676170">
+              <path d=" M 0 0 m 15 250 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213676510" transform="matrix(1,0,0,1,16.44,268.89)">
+          <g id="data_24213676510">
+            <g id="nodedata_24213676510" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">F</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213687600">
+          <g id="data_24213687600">
+            <g id="nodedata_24213687600">
+              <path d=" M 0 0 m 20 281 l 0 11" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213687810">
+          <g id="data_24213687810">
+            <g id="nodedata_24213687810">
+              <path d=" M 0 0 m 20 292 l -5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213688640">
+          <g id="data_24213688640">
+            <g id="nodedata_24213688640">
+              <path d=" M 0 0 m 15 292 l 0 -8" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213693310" transform="matrix(1,0,0,1,411.31,27.89)">
+          <g id="data_24213693310">
+            <g id="nodedata_24213693310" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">A</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213693320" transform="matrix(1,0,0,1,411.31,77.89)">
+          <g id="data_24213693320">
+            <g id="nodedata_24213693320" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">B</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213693330" transform="matrix(1,0,0,1,411.31,127.89)">
+          <g id="data_24213693330">
+            <g id="nodedata_24213693330" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">C</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213693340" transform="matrix(1,0,0,1,411.31,177.89)">
+          <g id="data_24213693340">
+            <g id="nodedata_24213693340" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">D</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213693350" transform="matrix(1,0,0,1,411.31,225.39)">
+          <g id="data_24213693350">
+            <g id="nodedata_24213693350" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">E</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213693360" transform="matrix(1,0,0,1,411.44,268.89)">
+          <g id="data_24213693360">
+            <g id="nodedata_24213693360" transform="matrix(1,0,0,1,0,0)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#000000" opacity="1" rotation-angle="0">F</text>
+            </g>
+          </g>
+        </g>
+        <g id="24213695060">
+          <g id="data_24213695060">
+            <g id="nodedata_24213695060">
+              <path d=" M 0 0 m 410 12 l 0 -7" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213695400">
+          <g id="data_24213695400">
+            <g id="nodedata_24213695400">
+              <path d=" M 0 0 m 410 5 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213696140">
+          <g id="data_24213696140">
+            <g id="nodedata_24213696140">
+              <path d=" M 0 0 m 410 55 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213697990">
+          <g id="data_24213697990">
+            <g id="nodedata_24213697990">
+              <path d=" M 0 0 m 411 105 l 4 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213698690">
+          <g id="data_24213698690">
+            <g id="nodedata_24213698690">
+              <path d=" M 0 0 m 411 155 l 4 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213703050">
+          <g id="data_24213703050">
+            <g id="nodedata_24213703050">
+              <path d=" M 0 0 m 410 250 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213703480">
+          <g id="data_24213703480">
+            <g id="nodedata_24213703480">
+              <path d=" M 0 0 m 410 292 l 0 -9" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24213704040">
+          <g id="data_24213704040">
+            <g id="nodedata_24213704040">
+              <path d=" M 0 0 m 410 205 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24214041500">
+          <g id="data_24214041500">
+            <g id="nodedata_24214041500">
+              <path d=" M 0 0 m 415 155 l -5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24214042430">
+          <g id="data_24214042430">
+            <g id="nodedata_24214042430">
+              <path d=" M 0 0 m 410 105 l 5 0" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+        <g id="24214053510">
+          <g id="data_24214053510">
+            <g id="nodedata_24214053510">
+              <path d=" M 0 0 m 20 11 l 0 -6" stroke="#000000" fill="transparent" stroke-width="0.1" stroke-linecap="round"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="4832448301" objectid="A4BOZUAQHJ" name="P001" fullname="P1|H3|FB.003|P001" cobjectid="A3NQJNT4EZ" transform="matrix(1,0,0,1,225,125)">
+        <g id="data_4832448301">
+          <g id="nodedata_4832448301">
+            <path d=" M 0 0 m 0 -7.5 a 7.5 7.5 0 0 0 0 15 M 0 0 m 0 -7.5 a 7.5 7.5 0 0 1 0 15" stroke="#0000FF" fill="transparent" stroke-width="0.5"></path>
+            <path d=" M 0 0 m 0 -7.5 l 7.5 7.5" stroke="#0000FF" fill="transparent" stroke-width="0.5" stroke-linecap="round"></path>
+            <path d=" M 0 0 m 7.5 -0 l -7.5 7.5" stroke="#0000FF" fill="transparent" stroke-width="0.5" stroke-linecap="round"></path>
+            <path d=" M 0 0 m -7.5 -1 a 1 1 0 0 0 0 2 M 0 0 m -7.5 -1 a 1 1 0 0 1 0 2" stroke="#0000FF" fill="transparent" stroke-width="0.1"></path>
+            <path d=" M 0 0 m 7.5 -1 a 1 1 0 0 0 0 2 M 0 0 m 7.5 -1 a 1 1 0 0 1 0 2" stroke="#0000FF" fill="transparent" stroke-width="0.1"></path>
+          </g>
+          <g id="data_property_4832448301_0">
+            <g id="nodedata_property_4832448301_0" transform="matrix(1,0,0,1,-3.97,7.89)">
+              <text x="0" y="3.52778" background="#FFFFFF" unselectable="on" font-size="3.52778" text-anchor="left" font-family="Arial" fill="#0000FF" opacity="1" rotation-angle="0">P001</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="48324429040">
+        <g id="data_48324429040">
+          <g id="nodedata_48324429040">
+            <path d=" M 0 0 m 175 104.4722 a 18.0278 18.0278 0 0 0 0 36.0556 M 0 0 m 175 104.4722 a 18.0278 18.0278 0 0 1 0 36.0556" stroke="#000000" fill="transparent" stroke-width="0.1"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="DrawItemsGroup">
+      <g id="Marker_Container"></g>
+    </g>
+    <g id="MS_Group"></g>
+  </g>
+  <g id="raster-Hori-group">
+    <path d="M 0 0 L 0 600" stroke-width="0.25" stroke="green" display="none"></path>
+  </g>
+  <g id="raster-verti-group">
+    <path d="M 0 0 L 800 0" stroke-width="0.25" stroke="green" display="none"></path>
+  </g>
+  <g id="QuadTreeRenderGroup" opacity="0">
+    <rect x="0" y="0" width="420" height="297" opacity="0.2"></rect>
+    <rect x="0" y="0" width="420" height="297" id="SelectedQuad" opacity="0.2"></rect>
+  </g>
+  <g id="twodc-layout-Quad-group">
+    <g id="twodc-layout-Quad-group-Hori" style="display:block;" transform="translate(0,66.2245864868164)">
+      <g id="twodc-layout-Quad-group-Hori-Text"></g>
+      <path d="M 420 0 m 0 0 l -5 0 l 0 5 l 5 0 l 0 -5" stroke-width="0.25" stroke="black" fill="grey" opacity=".4" id="twodc-layout-Quad-Group-Hori-Path" transform="scale(1,0.8884468011777259)"></path>
+    </g>
+    <g id="twodc-layout-Quad-group-Verti" style="display:block;" transform="translate(98.11465454101562,0)">
+      <g id="twodc-layout-Quad-group-Verti-Text"></g>
+      <path d="M 0 297 m 0 0 l 0 287 l 5 0 l 0 -287 l -5 0" stroke-width="0.25" stroke="black" fill="grey" opacity=".4" id="twodc-layout-Quad-Group-Verti-Path" transform="scale(0.8884468011777259, 1)"></path>
+    </g>
+  </g>
+</svg>
