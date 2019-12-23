@@ -9,9 +9,9 @@ PATH="output.svg"
 def line(prop,pos=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.}}
-    line_ref=pos["Location"].values()[:2]
-    line_start = prop["Coordinate"][0].values()[:2]
-    line_end = prop["Coordinate"][1].values()[:2]
+    line_ref=list(pos["Location"].values())[:2]
+    line_start = list(prop["Coordinate"][0].values())[:2]
+    line_end = list(prop["Coordinate"][1].values())[:2]
     line_start[0]=float(line_start[0])+float(line_ref[0])
     line_start[1]=float(line_start[1])+float(line_ref[1])
     line_end[0]=float(line_end[0])+float(line_ref[0])
@@ -22,8 +22,8 @@ def line(prop,pos=None):
 def circle(prop,pos=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.}}
-    circle_ref=pos["Location"].values()[:2]
-    circle_center = prop["Position"]["Location"][:2]
+    circle_ref=list(pos["Location"].values())[:2]
+    circle_center = list(prop["Position"]["Location"].values())[:2]
     circle_radius = float(prop["@Radius"])
     circle_center[0]=float(circle_center[0])+float(circle_ref[0])
     circle_center[1]=float(circle_center[1])+float(circle_ref[1])
@@ -33,13 +33,13 @@ def circle(prop,pos=None):
 def text(prop):
     #text_insert = [float(x) for x in prop["Position"]["Location"].values()[:2]]
     #text_height = dxf_entity.dxf.height * 1.4 # hotfix - 1.4 to fit svg and dvg
-    svg_entity = svgwrite.Drawing().text(prop["@String"], x=prop["Position"]["Location"].values()[0],y=prop["Position"]["Location"].values()[1],font_family=prop["@Font"])
+    svg_entity = svgwrite.Drawing().text(prop["@String"], x=list(prop["Position"]["Location"].values())[0],y=list(prop["Position"]["Location"].values())[1],font_family=prop["@Font"])
     #svg_entity.translate(text_insert[0]*(SCALE), -text_insert[1]*(SCALE))
     return svg_entity
 def polyline(prop,pos=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.}}
-    point_list = [(float(x[0])+float(pos["Location"].values()[0]), float(x[1])+float(pos["Location"].values()[1])) for x in prop["Coordinate"]]
+    point_list = [(float(list(x.values())[0])+float(list(pos["Location"].values())[0]), float(list(x.values())[1])+float(list(pos["Location"].values())[1])) for x in prop["Coordinate"]]
     svg_entity = svgwrite.Drawing().polyline(points=point_list, stroke='black', fill='none', stroke_width=1.0/SCALE)
     #svg_entity.scale(SCALE, -SCALE)
     return svg_entity
@@ -53,18 +53,18 @@ def trimmedcurve(prop,pos=None):
         isLarge=True
     assert "Circle" in prop
     circle_R=float(prop["Circle"]["@Radius"])
-    circle_center=prop["Circle"]["Position"]["Location"].values()[:2]
-    circle_ref=pos["Location"].values()[:2]
+    circle_center=list(prop["Circle"]["Position"]["Location"].values())[:2]
+    circle_ref=list(pos["Location"].values())[:2]
     circle_center[0]=float(circle_center[0])+float(circle_ref[0])
     circle_center[1]=float(circle_center[1])+float(circle_ref[1])
     startPoint=[0.,0.]
-    startPoint[0]=circle_center[0]+cos(startAngle*math.pi()/180)*circle_R
-    startPoint[1]=circle_center[1]+sin(startAngle*math.pi()/180)*circle_R
+    startPoint[0]=circle_center[0]+math.cos(startAngle*math.pi/180.0)*circle_R
+    startPoint[1]=circle_center[1]+math.sin(startAngle*math.pi/180.0)*circle_R
     endPoint=[0.,0.]
-    endPoint[0]=circle_center[0]+cos(endAngle*math.pi()/180)*circle_R
-    endPoint[1]=circle_center[1]+sin(endAngle*math.pi()/180)*circle_R
+    endPoint[0]=circle_center[0]+math.cos(endAngle*math.pi/180.0)*circle_R
+    endPoint[1]=circle_center[1]+math.sin(endAngle*math.pi/180.0)*circle_R
     command=["M",tuple(startPoint)]
-    svg_entity=svgwrite.Drawing().Path(d=command,stroke = "black", fill="none", stroke_width = 1.0/SCALE)
+    svg_entity=svgwrite.Drawing().path(d=command,stroke = "black", fill="none", stroke_width = 1.0/SCALE)
     svg_entity.push_arc(target=tuple(endPoint),rotation=0,r=circle_R,large_arc=isLarge,angle_dir="+")
     return svg_entity
 func_dict={"Line":line,"Circle":circle,"text":text,"PolyLine":polyline,"TrimmedCurve":trimmedcurve}
@@ -116,6 +116,7 @@ def drawing(dic):
                 shape_list=[shape_list]
             for prop in component_list:
                 for shape in shape_list:
+                    a=1
                     if prop["@ComponentName"]==shape["@ComponentName"]:
                         svg_entity.add(component(prop,shape))
                         break
