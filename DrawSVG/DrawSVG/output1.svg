@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="297mm" version="1.1" viewBox="0 0 420 297" width="420mm" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs />
+  <g>
+    <circle cx="175.0" cy="122.5" fill="none" r="18.0277563773199" stroke="black" stroke-width="0.1" />
+    <polyline fill="none" points="262.5,117.5 285.0,117.5 285.0,125.0 262.5,125.0 262.5,117.5" stroke="black" stroke-width="0.1" />
+  </g>
+  <g>
+    <g>
+      <g>
+        <circle cx="225.0" cy="125.0" fill="none" r="7.5" stroke="black" stroke-width="0.5" />
+        <line stroke="black" stroke-width="0.5" x1="225.0" x2="232.5" y1="117.5" y2="125.0" />
+        <line stroke="black" stroke-width="0.5" x1="232.5" x2="225.0" y1="125.0" y2="132.5" />
+        <circle cx="217.5" cy="125.0" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+        <circle cx="232.5" cy="125.0" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+      </g>
+      <g>
+        <text font-family="Arial" font-size="3.52777777777778" x="220.885" y="136.76388888888889">P001</text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <g>
+          <line stroke="black" stroke-width="0.25" x1="245.0" x2="245.0" y1="130.0" y2="135.0" />
+          <line stroke="black" stroke-width="0.25" x1="245.0" x2="255.0" y1="135.0" y2="130.0" />
+          <line stroke="black" stroke-width="0.25" x1="255.0" x2="255.0" y1="130.0" y2="135.0" />
+          <line stroke="black" stroke-width="0.25" x1="255.0" x2="245.0" y1="135.0" y2="130.0" />
+          <circle cx="250.0" cy="132.5" fill="black" r="1.25" stroke="black" stroke-width="0.25" />
+          <circle cx="245.0" cy="132.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+          <circle cx="255.0" cy="132.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+        </g>
+        <g>
+          <text font-family="Arial" font-size="3.52777777777778" x="245.885" y="139.26388888888889">B001</text>
+        </g>
+      </g>
+      <g>
+        <g>
+          <g>
+            <line stroke="black" stroke-width="0.25" x1="251.25" x2="248.75" y1="122.5" y2="122.5" />
+            <line stroke="black" stroke-width="0.25" x1="248.75" x2="248.75" y1="122.5" y2="117.5" />
+            <line stroke="black" stroke-width="0.25" x1="248.75" x2="251.25" y1="117.5" y2="117.5" />
+            <line stroke="black" stroke-width="0.25" x1="251.25" x2="251.25" y1="117.5" y2="122.5" />
+            <line stroke="black" stroke-width="0.25" x1="250.0" x2="250.0" y1="132.5" y2="122.5" />
+            <line stroke="black" stroke-width="0.25" x1="248.78" x2="251.22" y1="120.75" y2="119.35" />
+            <circle cx="250.0" cy="117.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+            <circle cx="250.0" cy="125.0" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <path d="M 267.5 137.5 A 5.0 5.0 0 0,0 267.5 147.5" fill="none" stroke="black" stroke-width="0.35" />
+        <path d="M 272.5 147.5 A 5.0 5.0 0 0,0 272.5 137.5" fill="none" stroke="black" stroke-width="0.35" />
+        <line stroke="black" stroke-width="0.35" x1="267.5" x2="272.5" y1="137.5" y2="137.5" />
+        <line stroke="black" stroke-width="0.35" x1="267.5" x2="272.5" y1="147.5" y2="147.5" />
+        <line stroke="black" stroke-width="0.35" x1="270.0" x2="270.0" y1="137.5" y2="137.5" />
+        <line stroke="black" stroke-width="0.35" x1="270.0" x2="270.0" y1="147.5" y2="147.5" />
+        <circle cx="262.5" cy="142.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+        <circle cx="270.0" cy="137.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+        <circle cx="270.0" cy="147.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+        <circle cx="277.5" cy="142.5" fill="none" r="1.0" stroke="black" stroke-width="0.1" />
+      </g>
+      <g>
+        <text font-family="Arial" font-size="2.46944444444444" x="269.175" y="141.23472222222222">V </text>
+      </g>
+    </g>
+  </g>
+</svg>
