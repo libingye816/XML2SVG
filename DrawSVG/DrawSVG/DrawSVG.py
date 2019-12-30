@@ -5,36 +5,41 @@ import os
 import math
 
 SCALE=1.0
-PATH="output2.svg"
-TEST="TEST2.XML"
+PATH="output3.svg"
+TEST="TEST3.XML"
 MAX_HEIGHT=297
 Keys=["Equipment","PipingNetworkSystem","ProcessInstrumentationFunction"]
-def rotate(pos,cosine,sine):
+def rotate(pos,ref):
+    cosine=float(ref[0])/math.sqrt(float(ref[0])**2+float(ref[1])**2)
+    sine=float(ref[1])/math.sqrt(float(ref[0])**2+float(ref[1])**2)
     return [float(pos[0])*cosine-float(pos[1])*sine,float(pos[0])*sine+float(pos[1])*cosine]
 def line(prop,pos=None):
     if pos is None:
-        pos={"Location":{"x":0.,"y":0.},"Reference":{"@X":1.,"@Y":0.}}
-    cosine=float(pos["Reference"]["@X"])/math.sqrt(float(pos["Reference"]["@Y"])**2+float(pos["Reference"]["@X"])**2)
-    sine=float(pos["Reference"]["@Y"])/math.sqrt(float(pos["Reference"]["@Y"])**2+float(pos["Reference"]["@X"])**2)
-    
+        pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
+    ysign=1
+    if "Axis" in pos:
+        ysign=int(pos["Axis"]["@Z"])
     line_ref=list(pos["Location"].values())[:2]
-    line_start = rotate(list(prop["Coordinate"][0].values())[:2],cosine,sine)
-    line_end = rotate(list(prop["Coordinate"][1].values())[:2],cosine,sine)
+    line_start = rotate(list(prop["Coordinate"][0].values())[:2],list(pos["Reference"].values()))
+    line_end = rotate(list(prop["Coordinate"][1].values())[:2],list(pos["Reference"].values()))
     line_start[0]=float(line_start[0])+float(line_ref[0])
-    line_start[1]=MAX_HEIGHT-(float(line_start[1])+float(line_ref[1]))
+    line_start[1]=MAX_HEIGHT-(ysign*float(line_start[1])+float(line_ref[1]))
     line_end[0]=float(line_end[0])+float(line_ref[0])
-    line_end[1]=MAX_HEIGHT-(float(line_end[1])+float(line_ref[1]))
+    line_end[1]=MAX_HEIGHT-(ysign*float(line_end[1])+float(line_ref[1]))
     svg_entity = svgwrite.Drawing().line(start=tuple(line_start), end=tuple(line_end), stroke = "black", stroke_width = float(prop["Presentation"]["@LineWeight"])/SCALE )
     #svg_entity.scale(SCALE,-SCALE)
     return svg_entity
 def circle(prop,pos=None):
     if pos is None:
-        pos={"Location":{"x":0.,"y":0.}}
+        pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
+    ysign=1
+    if "Axis" in pos:
+        ysign=int(pos["Axis"]["@Z"])
     circle_ref=list(pos["Location"].values())[:2]
-    circle_center = list(prop["Position"]["Location"].values())[:2]
+    circle_center = rotate(list(prop["Position"]["Location"].values())[:2],list(pos["Reference"].values()))
     circle_radius = float(prop["@Radius"])
     circle_center[0]=float(circle_center[0])+float(circle_ref[0])
-    circle_center[1]=MAX_HEIGHT-(float(circle_center[1])+float(circle_ref[1]))
+    circle_center[1]=MAX_HEIGHT-(ysign*float(circle_center[1])+float(circle_ref[1]))
     filled="none"
     if "@Filled" in prop and prop["@Filled"]=="Solid":
         filled="black"
@@ -45,28 +50,33 @@ def text(prop):
     #text_insert = [float(x) for x in prop["Position"]["Location"].values()[:2]]
     #text_height = dxf_entity.dxf.height * 1.4 # hotfix - 1.4 to fit svg and dvg
     xCoord=float(list(prop["Position"]["Location"].values())[0])
-    yCoord=float(list(prop["Position"]["Location"].values())[1])-float(prop["@Height"])/2
+    yCoord=float(list(prop["Position"]["Location"].values())[1])-float(prop["@Height"])
     if prop["@Justification"]=="CenterCenter":
         xCoord-=float(prop["@Width"])/2
-        #yCoord+=float(prop["@Height"])/2
+        yCoord+=float(prop["@Height"])/2
     elif prop["@Justification"]=="RightTop":
         xCoord-=float(prop["@Width"])
     elif prop["@Justification"]=="RightCenter":
         xCoord-=float(prop["@Width"])
-        #yCoord+=float(prop["@Height"])/2
-    svg_entity = svgwrite.Drawing().text(prop["@String"], x=[xCoord],y=[MAX_HEIGHT-yCoord],font_family=prop["@Font"],font_size = float(prop["@Height"])*SCALE)
+        yCoord+=float(prop["@Height"])/2
+    elif prop["@Justification"]=="LeftCenter":
+        yCoord+=float(prop["@Height"])/2
+    if prop["@TextAngle"]!="0":
+        svg_entity = svgwrite.Drawing().text(prop["@String"], x=[xCoord],y=[MAX_HEIGHT-yCoord],font_family=prop["@Font"],font_size = float(prop["@Height"])*SCALE,transform="rotate({2} {3},{4}) translate({0},{1})".format(0,-float(prop["@Height"]),prop["@TextAngle"],prop["Position"]["Location"]["@X"],MAX_HEIGHT-float(prop["Position"]["Location"]["@Y"])) )
+    else:
+        svg_entity = svgwrite.Drawing().text(prop["@String"], x=[xCoord],y=[MAX_HEIGHT-yCoord],font_family=prop["@Font"],font_size = float(prop["@Height"])*SCALE)
     #svg_entity.translate(text_insert[0]*(SCALE), -text_insert[1]*(SCALE))
     return svg_entity
 def polyline(prop,pos=None,type="polyline"):
     if pos is None:
-        pos={"Location":{"x":0.,"y":0.},"Reference":{"@X":1.,"@Y":0.}}
-    cosine=float(pos["Reference"]["@X"])/math.sqrt(float(pos["Reference"]["@Y"])**2+float(pos["Reference"]["@X"])**2)
-    sine=float(pos["Reference"]["@Y"])/math.sqrt(float(pos["Reference"]["@Y"])**2+float(pos["Reference"]["@X"])**2)
-    
+        pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
+    ysign=1
+    if "Axis" in pos:
+        ysign=int(pos["Axis"]["@Z"])
     assert int(prop["@NumPoints"])==len(prop["Coordinate"])
     point_list = [list(x.values())[:2] for x in prop["Coordinate"]]
-    point_list=[rotate(x,cosine,sine) for x in point_list]
-    point_list=[(x[0]+float(list(pos["Location"].values())[0]),MAX_HEIGHT-(x[1]+float(list(pos["Location"].values())[1]))) for x in point_list]
+    point_list=[rotate(x,list(pos["Reference"].values())) for x in point_list]
+    point_list=[(x[0]+float(list(pos["Location"].values())[0]),MAX_HEIGHT-(ysign*x[1]+float(list(pos["Location"].values())[1]))) for x in point_list]
     if type=="polyline":
         svg_entity = svgwrite.Drawing().polyline(points=point_list, stroke='black', fill='none', stroke_width=float(prop["Presentation"]["@LineWeight"])/SCALE)
         #svg_entity.scale(SCALE, -SCALE)
@@ -95,15 +105,18 @@ def polyline(prop,pos=None,type="polyline"):
     return svg_entity
 def trimmedcurve(prop,pos=None):
     if pos is None:
-        pos={"Location":{"x":0.,"y":0.}}
+        pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
+    ysign=1
+    if "Axis" in pos:
+        ysign=int(pos["Axis"]["@Z"])
     startAngle=float(prop["@StartAngle"])
     endAngle=float(prop["@EndAngle"])
     assert "Circle" in prop
     circle_R=float(prop["Circle"]["@Radius"])
-    circle_center=list(prop["Circle"]["Position"]["Location"].values())[:2]
+    circle_center = rotate(list(prop["Circle"]["Position"]["Location"].values())[:2],list(pos["Reference"].values()))
     circle_ref=list(pos["Location"].values())[:2]
     circle_center[0]=float(circle_center[0])+float(circle_ref[0])
-    circle_center[1]=float(circle_center[1])+float(circle_ref[1])
+    circle_center[1]=ysign*float(circle_center[1])+float(circle_ref[1])
     if endAngle-startAngle>=360:
         circle_center[1]=MAX_HEIGHT-circle_center[1]
         return svgwrite.Drawing().circle(center=tuple(circle_center), r=circle_R, stroke = "black", fill="none", stroke_width = float(prop["Circle"]["Presentation"]["@LineWeight"])/SCALE )
@@ -197,11 +210,13 @@ def systemDraw(shapeCat,component):
                 assert len(arrow["Line"])==2
                 svg_entity.add(line(list(arrow["Line"])[0]))
                 svg_entity.add(line(list(arrow["Line"])[1]))
+            continue
         if subkey=="CenterLine":
             for centerLine in subcomponent_list:
                 svg_entity.add(polyline(centerLine))
-        if "@ComponentName" in subcomponent_list[0]:
-            for subcomponent in subcomponent_list:
+            continue
+        for subcomponent in subcomponent_list:
+            if "@ComponentName" in subcomponent:
                 svg_entity.add(componentDraw(subkey,shapeCat,subcomponent))
     return svg_entity
 
