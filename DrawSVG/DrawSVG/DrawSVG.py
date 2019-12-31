@@ -13,7 +13,7 @@ def rotate(pos,ref):
     cosine=float(ref[0])/math.sqrt(float(ref[0])**2+float(ref[1])**2)
     sine=float(ref[1])/math.sqrt(float(ref[0])**2+float(ref[1])**2)
     return [float(pos[0])*cosine-float(pos[1])*sine,float(pos[0])*sine+float(pos[1])*cosine]
-def line(prop,pos=None):
+def line(prop,pos=None,scale=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
     ysign=1
@@ -26,10 +26,16 @@ def line(prop,pos=None):
     line_start[1]=MAX_HEIGHT-(ysign*float(line_start[1])+float(line_ref[1]))
     line_end[0]=float(line_end[0])+float(line_ref[0])
     line_end[1]=MAX_HEIGHT-(ysign*float(line_end[1])+float(line_ref[1]))
-    svg_entity = svgwrite.Drawing().line(start=tuple(line_start), end=tuple(line_end), stroke = "black", stroke_width = float(prop["Presentation"]["@LineWeight"])/SCALE )
-    #svg_entity.scale(SCALE,-SCALE)
+    svg_entity = svgwrite.Drawing().line(start=tuple(line_start), end=tuple(line_end), stroke = "black" if prop["Presentation"]["@Color"]=="0" else "blue", stroke_width = float(prop["Presentation"]["@LineWeight"])/SCALE )
+    if scale is not None:
+        xscale=float(scale["@X"])
+        yscale=float(scale["@Y"])
+        if xscale==1.0 and yscale==1.0:
+            return svg_entity
+        svg_entity.scale(xscale,yscale)
+        svg_entity.translate(-(xscale-1)/xscale*float(line_ref[0]),-(yscale-1)/yscale*(MAX_HEIGHT-float(line_ref[1])))
     return svg_entity
-def circle(prop,pos=None):
+def circle(prop,pos=None,scale=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
     ysign=1
@@ -67,7 +73,7 @@ def text(prop):
         svg_entity = svgwrite.Drawing().text(prop["@String"], x=[xCoord],y=[MAX_HEIGHT-yCoord],font_family=prop["@Font"],font_size = float(prop["@Height"])*SCALE)
     #svg_entity.translate(text_insert[0]*(SCALE), -text_insert[1]*(SCALE))
     return svg_entity
-def polyline(prop,pos=None,type="polyline"):
+def polyline(prop,pos=None,type="polyline",scale=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
     ysign=1
@@ -103,7 +109,7 @@ def polyline(prop,pos=None,type="polyline"):
             svg_entity.add(svgwrite.Drawing().line(start=tuple(end), end=(end[0]+2*(end_prev[0]-end[0])/abs(end_prev[0]-end[0]),end[1]+0.6667), stroke = "black", stroke_width = float(prop["Presentation"]["@LineWeight"])/SCALE ))
             svg_entity.add(svgwrite.Drawing().line(start=tuple(end), end=(end[0]+2*(end_prev[0]-end[0])/abs(end_prev[0]-end[0]),end[1]-0.6667), stroke = "black", stroke_width = float(prop["Presentation"]["@LineWeight"])/SCALE ))
     return svg_entity
-def trimmedcurve(prop,pos=None):
+def trimmedcurve(prop,pos=None,scale=None):
     if pos is None:
         pos={"Location":{"x":0.,"y":0.},"Reference":{"x":1.,"y":0.}}
     ysign=1
@@ -133,6 +139,7 @@ def trimmedcurve(prop,pos=None):
     command=["M",tuple(startPoint)]
     svg_entity=svgwrite.Drawing().path(d=command,stroke = "black", fill="none", stroke_width = float(prop["Circle"]["Presentation"]["@LineWeight"])/SCALE)
     svg_entity.push_arc(target=tuple(endPoint),rotation=0,r=circle_R,large_arc=isLarge,angle_dir="-",absolute=True)
+    
     return svg_entity
 
 def Node(circle_center,circle_ref):
@@ -147,10 +154,10 @@ def elementDraw(prop,shape):
     for key in shape.keys():
         if key in func_dict:
             if (type(shape[key]).__name__=='OrderedDict'):
-                svg_drawing.add(func_dict[key](shape[key],prop["Position"]))
+                svg_drawing.add(func_dict[key](shape[key],prop["Position"],prop["Scale"]))
             else:
                 for i in range(len(shape[key])):
-                    svg_drawing.add(func_dict[key](shape[key][i],prop["Position"]))
+                    svg_drawing.add(func_dict[key](shape[key][i],prop["Position"],prop["Scale"]))
     connection=prop["ConnectionPoints"]
     node_list=connection["Node"]
     if (type(connection["Node"]).__name__=='OrderedDict'):
