@@ -5,8 +5,8 @@ import os
 import math
 
 SCALE = 1.0
-PATH = "output3.svg"
-TEST = "TEST3.XML"
+PATH = "output6.svg"
+TEST = "TEST6.XML"
 MAX_HEIGHT = 297
 Keys = ["Equipment", "PipingNetworkSystem", "ProcessInstrumentationFunction"]
 
@@ -31,8 +31,9 @@ def line(prop, pos=None, scale=None):
     line_end[0] = float(line_end[0]) + float(line_ref[0])
     line_end[1] = MAX_HEIGHT - (ysign * float(line_end[1]) + float(line_ref[1]))
     svg_entity = svgwrite.Drawing().line(start=tuple(line_start), end=tuple(line_end),
-                                         stroke="black" if prop["Presentation"]["@Color"] == "0" else "blue",
+                                         stroke="blue" if prop["Presentation"]["@Color"] == "2" else "black",
                                          stroke_width=float(prop["Presentation"]["@LineWeight"]) / SCALE)
+    #color:65536?
     if scale is not None:
         xscale = float(scale["@X"])
         yscale = float(scale["@Y"])
@@ -79,11 +80,21 @@ def text(prop):
         yCoord += float(prop["@Height"]) / 2
     elif prop["@Justification"] == "LeftCenter":
         yCoord += float(prop["@Height"]) / 2
-    if prop["@TextAngle"] != "0":
+    if prop["@TextAngle"] != "0" and (prop["@Justification"] == "RightTop" or prop["@Justification"] == "LeftTop"):
         svg_entity = svgwrite.Drawing().text(prop["@String"], x=[xCoord], y=[MAX_HEIGHT - yCoord],
                                              font_family=prop["@Font"], font_size=float(prop["@Height"]) * SCALE,
                                              transform="rotate({2} {3},{4}) translate({0},{1})".format(0, -float(
                                                  prop["@Height"]), prop["@TextAngle"], prop["Position"]["Location"][
+                                                                                                           "@X"],
+                                                                                                       MAX_HEIGHT - float(
+                                                                                                           prop[
+                                                                                                               "Position"][
+                                                                                                               "Location"][
+                                                                                                               "@Y"])))
+    elif prop["@TextAngle"]!="0":
+        svg_entity = svgwrite.Drawing().text(prop["@String"], x=[xCoord], y=[MAX_HEIGHT - yCoord],
+                                             font_family=prop["@Font"], font_size=float(prop["@Height"]) * SCALE,
+                                             transform="rotate({} {},{})".format(prop["@TextAngle"], prop["Position"]["Location"][
                                                                                                            "@X"],
                                                                                                        MAX_HEIGHT - float(
                                                                                                            prop[
@@ -191,7 +202,14 @@ def trimmedcurve(prop, pos=None, scale=None):
     svg_entity = svgwrite.Drawing().path(d=command, stroke="black", fill="none",
                                          stroke_width=float(prop["Circle"]["Presentation"]["@LineWeight"]) / SCALE)
     svg_entity.push_arc(target=tuple(endPoint), rotation=0, r=circle_R, large_arc=isLarge, angle_dir="-", absolute=True)
-
+    if scale is not None:
+        xscale = float(scale["@X"])
+        yscale = float(scale["@Y"])
+        if xscale == 1.0 and yscale == 1.0:
+            return svg_entity
+        svg_entity.scale(xscale, yscale)
+        svg_entity.translate(-(xscale - 1) / xscale * float(circle_ref[0]),
+                             -(yscale - 1) / yscale * (MAX_HEIGHT - float(circle_ref[1])))
     return svg_entity
 
 
