@@ -1,0 +1,34 @@
+using System;
+using System.CodeDom.Compiler;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Xml.Serialization;
+
+namespace Comos.Proteus
+{
+	[DebuggerStepThrough]
+	[DesignerCategory("code")]
+	[GeneratedCode("xsd", "4.6.1055.0")]
+	[Serializable]
+	public class ControlPoints
+	{
+		private Comos.Proteus.Coordinate[] coordinateField;
+
+		[XmlElement("Coordinate")]
+		public Comos.Proteus.Coordinate[] Coordinate
+		{
+			get
+			{
+				return this.coordinateField;
+			}
+			set
+			{
+				this.coordinateField = value;
+			}
+		}
+
+		public ControlPoints()
+		{
+		}
+	}
+}

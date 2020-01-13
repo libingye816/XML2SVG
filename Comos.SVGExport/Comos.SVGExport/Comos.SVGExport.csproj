@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04D45300-159C-4B81-9A8E-83B5435460FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Comos.SVGExport</RootNamespace>
+    <AssemblyName>Comos.SVGExport</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Comos.Controls">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.CSMEnum">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.CSMEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.Global">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.Global.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Comos.OkAbort">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.OkAbort.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.ProgressLoggerTemplates.2.0">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.ProgressLoggerTemplates.2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.SolidBaseUtilities">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.SolidBaseUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.WSP.Interfaces">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.WSP.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.WSP.PfdMod">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.WSP.PfdMod.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.WSP.RoDevice">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.WSP.RoDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.WSP.RoDeviceBase">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.WSP.RoDeviceBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.WSP.RoDevicePfd">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.WSP.RoDevicePfd.dll</HintPath>
+    </Reference>
+    <Reference Include="Comos.WSP.RoUtilities">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Comos.WSP.RoUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Comos3D">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Interop.Comos3D.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ComosImportInterface">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Interop.ComosImportInterface.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ComosLib">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Interop.ComosLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ComosVBInterface">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Interop.ComosVBInterface.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ComosWSPInterface">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Interop.ComosWSPInterface.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Plt">
+      <HintPath>C:\Program Files (x86)\COMOS\1024\Current\Bin\Interop.Plt.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.ReportLib">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Interop.ReportLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Iso15926ResultLogger">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Iso15926ResultLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Iso15926Verificator">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\Iso15926Verificator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ProgressLogger.2.0">
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\ProgressLogger.2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\COMOS\1032\Current\Bin\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comos.Intern.DevTools\SchemaValidationEventDelegate.cs" />
+    <Compile Include="Comos.Intern.DevTools\ValidationReturnValues.cs" />
+    <Compile Include="Comos.Intern.DevTools\XmlSchemaValidation.cs" />
+    <Compile Include="Comos.Piping.Generic\ObjectList_TIdxType, TDataType_.cs" />
+    <Compile Include="Comos.Piping.Generic\OlDuplicates.cs" />
+    <Compile Include="Comos.Piping.Generic\StringList_TDataType_.cs" />
+    <Compile Include="Comos.Proteus\ActuatingFunction.cs" />
+    <Compile Include="Comos.Proteus\ActuatingSystem.cs" />
+    <Compile Include="Comos.Proteus\ActuatingSystemComponent.cs" />
+    <Compile Include="Comos.Proteus\AngleDouble.cs" />
+    <Compile Include="Comos.Proteus\AngleUnitsType.cs" />
+    <Compile Include="Comos.Proteus\AnnotationItem.cs" />
+    <Compile Include="Comos.Proteus\AnnotationItemComponentType.cs" />
+    <Compile Include="Comos.Proteus\AnnotationItemStatus.cs" />
+    <Compile Include="Comos.Proteus\AreaUnitsType.cs" />
+    <Compile Include="Comos.Proteus\Association.cs" />
+    <Compile Include="Comos.Proteus\AssociationType.cs" />
+    <Compile Include="Comos.Proteus\Axis.cs" />
+    <Compile Include="Comos.Proteus\BsplineCurve.cs" />
+    <Compile Include="Comos.Proteus\BsplineCurveCurveForm.cs" />
+    <Compile Include="Comos.Proteus\BsplineCurveCurveType.cs" />
+    <Compile Include="Comos.Proteus\BsplineSurface.cs" />
+    <Compile Include="Comos.Proteus\BsplineSurfaceSurfaceForm.cs" />
+    <Compile Include="Comos.Proteus\BsplineSurfaceSurfaceType.cs" />
+    <Compile Include="Comos.Proteus\CenterLine.cs" />
+    <Compile Include="Comos.Proteus\Circle.cs" />
+    <Compile Include="Comos.Proteus\CircleFilled.cs" />
+    <Compile Include="Comos.Proteus\Component.cs" />
+    <Compile Include="Comos.Proteus\CompositeCurve.cs" />
+    <Compile Include="Comos.Proteus\Connection.cs" />
+    <Compile Include="Comos.Proteus\ConnectionPoints.cs" />
+    <Compile Include="Comos.Proteus\ControlPointArray.cs" />
+    <Compile Include="Comos.Proteus\ControlPointArray1.cs" />
+    <Compile Include="Comos.Proteus\ControlPoints.cs" />
+    <Compile Include="Comos.Proteus\ControlPoints1.cs" />
+    <Compile Include="Comos.Proteus\Coordinate.cs" />
+    <Compile Include="Comos.Proteus\CrossPageConnection.cs" />
+    <Compile Include="Comos.Proteus\Curve.cs" />
+    <Compile Include="Comos.Proteus\CurveBoundedSurface.cs" />
+    <Compile Include="Comos.Proteus\Discipline.cs" />
+    <Compile Include="Comos.Proteus\Double.cs" />
+    <Compile Include="Comos.Proteus\Drawing.cs" />
+    <Compile Include="Comos.Proteus\DrawingBorder.cs" />
+    <Compile Include="Comos.Proteus\DrawingOrientation.cs" />
+    <Compile Include="Comos.Proteus\Ellipse.cs" />
+    <Compile Include="Comos.Proteus\EllipseFilled.cs" />
+    <Compile Include="Comos.Proteus\Equipment.cs" />
+    <Compile Include="Comos.Proteus\Extent.cs" />
+    <Compile Include="Comos.Proteus\FabricationCategory.cs" />
+    <Compile Include="Comos.Proteus\GenericAttribute.cs" />
+    <Compile Include="Comos.Proteus\GenericAttributeFormat.cs" />
+    <Compile Include="Comos.Proteus\GenericAttributes.cs" />
+    <Compile Include="Comos.Proteus\History.cs" />
+    <Compile Include="Comos.Proteus\Identifier.cs" />
+    <Compile Include="Comos.Proteus\IdentifierElement.cs" />
+    <Compile Include="Comos.Proteus\IdentifierElementDependantAttributeContents.cs" />
+    <Compile Include="Comos.Proteus\InformationFlow.cs" />
+    <Compile Include="Comos.Proteus\InnerBoundary.cs" />
+    <Compile Include="Comos.Proteus\InstrumentationLoopFunction.cs" />
+    <Compile Include="Comos.Proteus\InstrumentComponent.cs" />
+    <Compile Include="Comos.Proteus\InstrumentConnection.cs" />
+    <Compile Include="Comos.Proteus\InstrumentLoop.cs" />
+    <Compile Include="Comos.Proteus\InsulationSymbol.cs" />
+    <Compile Include="Comos.Proteus\Items1ChoiceType.cs" />
+    <Compile Include="Comos.Proteus\Items1ChoiceType1.cs" />
+    <Compile Include="Comos.Proteus\Items1ChoiceType2.cs" />
+    <Compile Include="Comos.Proteus\Items1ChoiceType3.cs" />
+    <Compile Include="Comos.Proteus\Items1ChoiceType4.cs" />
+    <Compile Include="Comos.Proteus\Items1ChoiceType5.cs" />
+    <Compile Include="Comos.Proteus\ItemsChoiceType.cs" />
+    <Compile Include="Comos.Proteus\ItemsChoiceType1.cs" />
+    <Compile Include="Comos.Proteus\ItemsChoiceType2.cs" />
+    <Compile Include="Comos.Proteus\ItemsChoiceType3.cs" />
+    <Compile Include="Comos.Proteus\KnotMultiplicities.cs" />
+    <Compile Include="Comos.Proteus\Knots.cs" />
+    <Compile Include="Comos.Proteus\Label.cs" />
+    <Compile Include="Comos.Proteus\LengthDouble.cs" />
+    <Compile Include="Comos.Proteus\LengthString.cs" />
+    <Compile Include="Comos.Proteus\LengthUnitsType.cs" />
+    <Compile Include="Comos.Proteus\Line.cs" />
+    <Compile Include="Comos.Proteus\Location.cs" />
+    <Compile Include="Comos.Proteus\MassDouble.cs" />
+    <Compile Include="Comos.Proteus\MassUnitsType.cs" />
+    <Compile Include="Comos.Proteus\Max.cs" />
+    <Compile Include="Comos.Proteus\Min.cs" />
+    <Compile Include="Comos.Proteus\Node.cs" />
+    <Compile Include="Comos.Proteus\NodeFlow.cs" />
+    <Compile Include="Comos.Proteus\NodeFunction.cs" />
+    <Compile Include="Comos.Proteus\NodeType.cs" />
+    <Compile Include="Comos.Proteus\Nozzle.cs" />
+    <Compile Include="Comos.Proteus\NozzleType.cs" />
+    <Compile Include="Comos.Proteus\NozzleTypeValue.cs" />
+    <Compile Include="Comos.Proteus\ObjectAttributesReference.cs" />
+    <Compile Include="Comos.Proteus\OuterBoundary.cs" />
+    <Compile Include="Comos.Proteus\PersistentID.cs" />
+    <Compile Include="Comos.Proteus\PipeConnectorSymbol.cs" />
+    <Compile Include="Comos.Proteus\PipeFlowArrow.cs" />
+    <Compile Include="Comos.Proteus\PipeSlopeSymbol.cs" />
+    <Compile Include="Comos.Proteus\PipingComponent.cs" />
+    <Compile Include="Comos.Proteus\PipingNetworkSegment.cs" />
+    <Compile Include="Comos.Proteus\PipingNetworkSystem.cs" />
+    <Compile Include="Comos.Proteus\Plane.cs" />
+    <Compile Include="Comos.Proteus\PlantArea.cs" />
+    <Compile Include="Comos.Proteus\PlantInformation.cs" />
+    <Compile Include="Comos.Proteus\PlantItem.cs" />
+    <Compile Include="Comos.Proteus\PlantItemComponentType.cs" />
+    <Compile Include="Comos.Proteus\PlantItemStatus.cs" />
+    <Compile Include="Comos.Proteus\PlantModel.cs" />
+    <Compile Include="Comos.Proteus\PlantModelRDLService.cs" />
+    <Compile Include="Comos.Proteus\PolyLine.cs" />
+    <Compile Include="Comos.Proteus\Position.cs" />
+    <Compile Include="Comos.Proteus\Presentation.cs" />
+    <Compile Include="Comos.Proteus\PressureDouble.cs" />
+    <Compile Include="Comos.Proteus\PressureUnitsType.cs" />
+    <Compile Include="Comos.Proteus\ProcessInstrument.cs" />
+    <Compile Include="Comos.Proteus\ProcessInstrumentationFunction.cs" />
+    <Compile Include="Comos.Proteus\ProcessSignalGeneratingFunction.cs" />
+    <Compile Include="Comos.Proteus\ProcessSignalGeneratingSystem.cs" />
+    <Compile Include="Comos.Proteus\ProcessSignalGeneratingSystemComponent.cs" />
+    <Compile Include="Comos.Proteus\Project.cs" />
+    <Compile Include="Comos.Proteus\PropertyBreak.cs" />
+    <Compile Include="Comos.Proteus\Reference.cs" />
+    <Compile Include="Comos.Proteus\Scale.cs" />
+    <Compile Include="Comos.Proteus\ScopeBubble.cs" />
+    <Compile Include="Comos.Proteus\Shape.cs" />
+    <Compile Include="Comos.Proteus\ShapeCatalogue.cs" />
+    <Compile Include="Comos.Proteus\ShapeFilled.cs" />
+    <Compile Include="Comos.Proteus\SignalConnectorSymbol.cs" />
+    <Compile Include="Comos.Proteus\String.cs" />
+    <Compile Include="Comos.Proteus\Surface.cs" />
+    <Compile Include="Comos.Proteus\Symbol.cs" />
+    <Compile Include="Comos.Proteus\TemperatureDouble.cs" />
+    <Compile Include="Comos.Proteus\TemperatureUnitsType.cs" />
+    <Compile Include="Comos.Proteus\Text.cs" />
+    <Compile Include="Comos.Proteus\TextJustification.cs" />
+    <Compile Include="Comos.Proteus\TextString.cs" />
+    <Compile Include="Comos.Proteus\TextStringFormatSpecification.cs" />
+    <Compile Include="Comos.Proteus\Transaction.cs" />
+    <Compile Include="Comos.Proteus\TransactionType.cs" />
+    <Compile Include="Comos.Proteus\TrimmedCurve.cs" />
+    <Compile Include="Comos.Proteus\UnitsOfMeasure.cs" />
+    <Compile Include="Comos.Proteus\VolumeUnitsType.cs" />
+    <Compile Include="Comos.Proteus\Weights.cs" />
+    <Compile Include="Comos.Proteus\Weights1.cs" />
+    <Compile Include="Comos.Proteus\WeightsData.cs" />
+    <Compile Include="Comos.ReportAnalysis\FoundReportItemEventArgs.cs" />
+    <Compile Include="Comos.ReportAnalysis\GraphicTypes.cs" />
+    <Compile Include="Comos.ReportAnalysis\ReportAnalyzer.cs" />
+    <Compile Include="Comos.XMpLantExport2\RunningNumber.cs" />
+    <Compile Include="Comos.XMpLantExport2\XMpLantExportLogging.cs" />
+    <Compile Include="Comos.XMpLant\Constants.cs" />
+    <Compile Include="Comos.XMpLant\CreateElementExtentDelegate.cs" />
+    <Compile Include="Comos.XMpLant\enmIsoMappingStandardTableColumn.cs" />
+    <Compile Include="Comos.XMpLant\enmUnitMappingStandardTableColumn.cs" />
+    <Compile Include="Comos.XMpLant\enmXMpLantComponentType.cs" />
+    <Compile Include="Comos.XMpLant\enmXMpLantVersion.cs" />
+    <Compile Include="Comos.XMpLant\GetAttributeId.cs" />
+    <Compile Include="Comos.XMpLant\XMLHelper.cs" />
+    <Compile Include="Comos.XMpLant\XmlHelperExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SvgExport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestScript.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comos.XMPlantExport1References\Comos.Controls.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.CSMEnum.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.Global.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.OkAbort.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.ProgressLoggerTemplates.2.0.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.SolidBaseUtilities.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.WSP.Interfaces.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.WSP.PfdMod.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.WSP.RoDeviceBase.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.WSP.RoDevicePfd.dll" />
+    <Content Include="Comos.XMPlantExport1References\Comos.WSP.RoUtilities.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.Comos3D.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.ComosImportInterface.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.ComosLib.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.ComosVBInterface.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.ComosWSPInterface.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.Plt.dll" />
+    <Content Include="Comos.XMPlantExport1References\Interop.ReportLib.dll" />
+    <Content Include="Comos.XMPlantExport1References\Iso15926ResultLogger.dll" />
+    <Content Include="Comos.XMPlantExport1References\Iso15926Verificator.dll" />
+    <Content Include="Comos.XMPlantExport1References\ProgressLogger.2.0.dll" />
+    <Content Include="Comos.XMPlantExport1References\stdole.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
