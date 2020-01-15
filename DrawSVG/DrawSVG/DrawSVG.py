@@ -3,6 +3,7 @@ import xmltodict
 import svgwrite
 import os
 import math
+import pymongo
 
 SCALE = 1.0
 PATH = "output3.svg"
@@ -10,6 +11,16 @@ TEST = "TEST3.XML"
 MAX_HEIGHT = 297
 #Keys = ["Equipment", "PipingNetworkSystem", "ProcessInstrumentationFunction"]
 key_ignore = ["PlantInformation","Extent","Drawing","ShapeCatalogue"]
+myclient=pymongo.MongoClient("mongodb://localhost")
+mydb = myclient["testdb"]
+attribute_col=mydb["attributes"]
+name_col=mydb["names"]
+source_col=mydb["source"]
+svg_col=mydb["svgfile"]
+if name_col.count_documents({})==0:
+    name_col.insert_one({"ComosProperties":["SystemUID"]})
+
+print("mongodb connected!")
 
 
 def transform(pos, ref,ysign,scale):
@@ -359,6 +370,26 @@ def elementDraw(prop, shape):
         else:
             for flow in list(prop["InformationFlow"]):
                 svg_entity.add(polyline(flow["CenterLine"], type="flow"))
+
+    component_attribute={"ID":prop["PersistentID"]["@Identifier"],"svgfile":PATH,"jsonfile":TEST}
+    attributes = prop["GenericAttributes"]
+    if (type(attributes).__name__ == 'OrderedDict'):
+        attributes = [attributes]
+    for attribute_set in attributes:
+        name_list=list(name_col.find_one()[attribute_set["@Set"]]) if attribute_set["@Set"] in name_col.find_one() else []
+        flag=False
+        attribute_list=attribute_set["GenericAttribute"]
+        if (type(attribute_list).__name__ == 'OrderedDict'):
+            attribute_list = [attribute_list]
+        for attribute in attribute_list:
+            component_attribute[attribute["@Name"].replace('.','_').replace('$','%')]=str(attribute["@Value"])
+            if attribute["@Name"] not in name_list:
+                name_list.append(attribute["@Name"])
+                flag=True
+        if flag:
+            name_col.update_one({},{"$set": { attribute_set["@Set"]: sorted(name_list) }})
+    attribute_col.insert_one(component_attribute)
+    print("component uploaded")
     return svg_entity
 
 
@@ -454,8 +485,7 @@ def draw(dic):
                         elif "@ComponentClass" in component:
                             svg.add(systemDraw(shapeCat,component))
                         
-            
-    svg.saveas(PATH)
+    return svg
 
 
 def main():
@@ -465,8 +495,13 @@ def main():
     xml_file = open(TEST, 'r', encoding='UTF-8')
     xml_str = xml_file.read()
     json_dict = xmltodict.parse(xml_str)
-    draw(json_dict)
-
+    svg=draw(json_dict)
+    if svg_col.count_documents({"file":PATH})==0:
+        svg_col.insert_one({"file":PATH,"svg":svg.tostring()})
+    svg.saveas(PATH)
+    if source_col.count_documents({"file":TEST})==0:
+        source_col.insert_one({"file":TEST,"json":json_dict})
+    
 
 if __name__ == "__main__":
     main()
