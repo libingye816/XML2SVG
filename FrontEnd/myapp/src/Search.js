@@ -36,7 +36,7 @@ class Search extends React.Component {
             resultShow=(
             
                 this.state.results.map(result => (
-                    <a href={result.url}>{result.name} in {result.file} (ID: {result.ID})</a>))
+                    <a href={result.url}>{result.Name} in {result.svgfile} (ID: {result.ID})</a>))
             )
         }
 
