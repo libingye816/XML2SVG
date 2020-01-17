@@ -8,7 +8,8 @@ class Search extends React.Component {
         this.names = [{ key: "SystemUID", value: "SystemUID", text: "SystemUID" },
             { key: "Description", value: "Description", text: "Description" },
             { key: "FullName", value: "FullName", text: "FullName" },
-            {key: "Name", value: "Name", text: "Name" }];
+            { key: "Name", value: "Name", text: "Name" },
+            { key: "Text String", value: "Text String", text: "Text String" }];
         //this.attribute="";
         //this.condition="";
         this.state = {
@@ -40,18 +41,26 @@ class Search extends React.Component {
         let resultShow = null;
         let { attribute, condition } = this.state;
         if (this.state.results.length > 0 && this.state.ifShow) {
-            resultShow=(
-            
-                this.state.results.map(result => (
-                    <div>
-                        <a href={result.url} onClick={this.reset}>{result.Name} in {result.svgfile} (ID: {result.ID})</a>
-                        <br />
-                        </div>))
-            )
-        }
+            resultShow = (
+                <Segment style={{ overflow: 'auto', maxHeight: 1200 }}>
+                <h1>Search results:</h1>
+                    {this.state.results.map(result => (
+                        <div>
+                            <a href={result.url} onClick={this.reset}>{result.Name} in {result.svgfile} (ID: {result.ID})</a>
+                            <br />
+                        </div>
+                    )
+                    )}
+                </Segment>
+        )
+    }
 
         else if (this.state.results.length === 0 && this.state.ifShow) {
-            resultShow=( < p > Find nothing!</p >)
+            
+            resultShow = (<Segment style={{ overflow: 'auto', maxHeight: 1200 }}>
+                <h1>Search results:</h1>
+                < p > Find nothing!</p >\
+                </Segment>)
         }
         return (
             <Container>
@@ -72,10 +81,7 @@ class Search extends React.Component {
                     </Form.Group>
                     <Form.Button onClick={this.handleClick} loading={this.state.loading}>Search</Form.Button>
                 </Form>
-                <Segment style={{ overflow: 'auto', maxHeight: 1200 }}>
-                    {this.state.ifShow ? <h1>Search results:</h1> : null}
-                    {resultShow}
-                </Segment>
+                {resultShow}
             </Container>
         )
     }
