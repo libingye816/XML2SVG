@@ -6,8 +6,8 @@ import math
 import pymongo
 
 SCALE = 1.0
-PATH = "output3.svg"
-TEST = "TEST3.XML"
+PATH = "11-1.svg"
+TEST = "=A01.10.A20.11-1 (A4582EDWU2).XML"
 MAX_HEIGHT = 297
 #Keys = ["Equipment", "PipingNetworkSystem", "ProcessInstrumentationFunction"]
 key_ignore = ["PlantInformation","Extent","Drawing","ShapeCatalogue"]
@@ -337,6 +337,8 @@ def Node(circle_center, circle_ref):
 
 
 def elementDraw(prop, shape):
+    component_attribute={"ID":prop["PersistentID"]["@Identifier"],"svgfile":PATH,"jsonfile":TEST}
+
     svg_entity = svgwrite.Drawing().g(id=prop["PersistentID"]["@Identifier"] + "_info")
     svg_drawing = svgwrite.Drawing().g(id=prop["PersistentID"]["@Identifier"] + "_shape")
     for key in shape.keys():
@@ -358,8 +360,10 @@ def elementDraw(prop, shape):
     svg_entity.add(svg_drawing)
     if "Text" in prop:
         svg_text = svgwrite.Drawing().g(id=prop["PersistentID"]["@Identifier"] + "_text")
+        text_attribute=[]
         if (type(prop["Text"]).__name__ == 'OrderedDict'):
             svg_text.add(text(prop["Text"]))
+            text_attribute.append(prop["Text"]["@String"])
         else:
             for label in list(prop["Text"]):
                 svg_text.add(text(label,type="label"))
@@ -371,7 +375,7 @@ def elementDraw(prop, shape):
             for flow in list(prop["InformationFlow"]):
                 svg_entity.add(polyline(flow["CenterLine"], type="flow"))
 
-    component_attribute={"ID":prop["PersistentID"]["@Identifier"],"svgfile":PATH,"jsonfile":TEST}
+    
     attributes = prop["GenericAttributes"]
     if (type(attributes).__name__ == 'OrderedDict'):
         attributes = [attributes]
