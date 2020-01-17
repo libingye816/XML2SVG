@@ -6,8 +6,8 @@ import math
 import pymongo
 
 SCALE = 1.0
-PATH = "11-1.svg"
-TEST = "=A01.10.A20.11-1 (A4582EDWU2).XML"
+PATH = "output2.svg"
+TEST = "TEST2.XML"
 MAX_HEIGHT = 297
 #Keys = ["Equipment", "PipingNetworkSystem", "ProcessInstrumentationFunction"]
 key_ignore = ["PlantInformation","Extent","Drawing","ShapeCatalogue"]
@@ -19,7 +19,7 @@ source_col=mydb["source"]
 svg_col=mydb["svgfile"]
 if name_col.count_documents({})==0:
     name_col.insert_one({"ComosProperties":["SystemUID"]})
-
+count=1
 print("mongodb connected!")
 
 
@@ -365,8 +365,11 @@ def elementDraw(prop, shape):
             svg_text.add(text(prop["Text"]))
             text_attribute.append(prop["Text"]["@String"])
         else:
+            text_attribute=[]
             for label in list(prop["Text"]):
                 svg_text.add(text(label,type="label"))
+                text_attribute.append(label["@String"])
+        component_attribute["Text String"]="@".join(text_attribute)
         svg_entity.add(svg_text)
     if "InformationFlow" in prop:
         if (type(prop["InformationFlow"]).__name__ == 'OrderedDict'):
@@ -392,8 +395,13 @@ def elementDraw(prop, shape):
                 flag=True
         if flag:
             name_col.update_one({},{"$set": { attribute_set["@Set"]: sorted(name_list) }})
-    attribute_col.insert_one(component_attribute)
-    print("component uploaded")
+    if attribute_col.count_documents({"ID":prop["PersistentID"]["@Identifier"]})==0:
+        attribute_col.insert_one(component_attribute)
+    else:
+        attribute_col.replace_one({"ID":prop["PersistentID"]["@Identifier"]},component_attribute)
+    global count
+    print("component NO.{} is uploaded".format(count))
+    count+=1
     return svg_entity
 
 
@@ -502,9 +510,13 @@ def main():
     svg=draw(json_dict)
     if svg_col.count_documents({"file":PATH})==0:
         svg_col.insert_one({"file":PATH,"svg":svg.tostring()})
+    else:
+        svg_col.replace_one({"file":PATH},{"file":PATH,"svg":svg.tostring()})
     svg.saveas(PATH)
     if source_col.count_documents({"file":TEST})==0:
         source_col.insert_one({"file":TEST,"json":json_dict})
+    else:
+        source_col.replace_one({"file":TEST},{"file":TEST,"json":json_dict})
     
 
 if __name__ == "__main__":
