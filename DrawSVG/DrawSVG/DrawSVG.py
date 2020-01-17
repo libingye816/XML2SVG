@@ -369,7 +369,7 @@ def elementDraw(prop, shape):
             for label in list(prop["Text"]):
                 svg_text.add(text(label,type="label"))
                 text_attribute.append(label["@String"])
-        component_attribute["Text String"]="@".join(text_attribute)
+        component_attribute["Text String"]=";".join(text_attribute)
         svg_entity.add(svg_text)
     if "InformationFlow" in prop:
         if (type(prop["InformationFlow"]).__name__ == 'OrderedDict'):
